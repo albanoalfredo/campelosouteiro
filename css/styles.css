@@ -36,15 +36,25 @@ h2  {
   padding: 2rem;
 }
 
+.meia-row {
+  width: 50%;
+}
+
 .orange {
   background-color: var(--laranja);
 }
-/*
-.lista-fotos {
-    width: 800px;
-}*/
+.blue {
+  background-color: var(--darkblue);
+  color: white;
+}
 
-.container {
+.content {
+  max-width: 1000px;
+  width: 80%;
+  margin: auto;
+}
+
+.grid-container {
   
   width: 80%;
   max-width: 1000px;
@@ -52,6 +62,14 @@ h2  {
   display: grid;
   justify-items: center;
   align-items: center;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
   gap: 1rem;
+  text-align: center;
+}
+
+.manifesto {
+  text-align: left;
+/*  width: 80%;
+  margin: 1000px;
+  margin: auto;*/
 }
