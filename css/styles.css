@@ -161,6 +161,7 @@ li {
   width: 81%;
   letter-spacing: .04rem;
   white-space: break-spaces;
+  text-align: left;
 }
 
 .svg-compromissos {
@@ -194,6 +195,79 @@ footer {
 .icone-svg {
   width: 40px;
 }
+
+.button {
+  border: none;
+  background-color: white;
+  color: var(--darkblue);
+  padding: 12px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 8px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  place-items: center;
+}
+
+.icone {
+  width: 25px;
+  fill: var(--darkblue);
+  display: inline-block;
+}
+
+.button h3 {
+  display: inline-block;
+  padding-right: 12px;
+  font-size: 1rem;
+  letter-spacing: .01rem;
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+}
+
+.whatsapp-cta {
+  /*width: 50px;*/
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  filter: drop-shadow(0 0 0.25rem #32587C82);
+  text-align: center;
+}
+
+.whatsapp-cta a p {
+  background-color: var(--darkblue);
+  color: white;
+  /*text-align: right;*/
+  margin-top: 8px;
+  padding: 8px;
+  font-size: .6rem;
+font-weight: 600;
+text-transform: uppercase;
+border-radius: 5px;
+}
+
+.whatsapp-btn {
+  width: 50px;
+}
+
+.btn-scroll {
+  z-index: 1000;
+  opacity: 0;
+  visibility: hidden;
+  transition: background-color .3s, opacity .5s,visibility .5s;
+}
+
+.show {
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
 
 @media only screen and (min-width: 768px) {
   /* For desktop: */
