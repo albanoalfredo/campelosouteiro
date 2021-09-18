@@ -42,6 +42,21 @@ h2  {
   text-align: center;
 }
 
+.topnav {
+  overflow: hidden;
+  background: #ffdbd3;
+
+}
+
+nav {
+  display: none;
+}
+
+.topnav ul,
+.topnav li {
+  list-style-type: none;
+}
+
 p span,
 li span {
   font-weight: 600;
