@@ -1,0 +1,204 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+   --laranja:  #F16522;
+   --darkblue: #32587C;
+}
+
+
+body {
+  font-family: 'Inter', sans-serif;
+  list-style-position: inside;
+  list-style-type: disc;
+  background-color: var(--darkblue);
+
+}
+
+
+h1, 
+h2,
+h3,
+h5 {
+  text-transform: uppercase;
+}
+
+h1 {
+  font-size: 2.4rem;
+}
+h5 {
+  font-size: .7rem;
+}
+
+
+
+.t-center {
+  text-align: center;
+}
+
+h2  {
+  color: white;
+  /*padding: 20px;*/
+  text-align: center;
+}
+
+p span,
+li span {
+  font-weight: 600;
+}
+
+li span {
+  color: var(--darkblue);
+}
+
+p {
+  line-height: 1.5;
+  /*margin-bottom: .5rem;*/
+
+}
+
+ul {
+  padding-left: 20px;
+  margin-bottom: 1rem;
+}
+
+li {
+  margin-bottom: .5rem;
+}
+
+.row {
+  width: 100%;
+  padding: 2rem;
+}
+
+.meia-row {
+  width: 50%;
+}
+
+.orange {
+  background-color: var(--laranja);
+}
+.blue {
+  background-color: var(--darkblue);
+  color: white;
+}
+
+.button {
+  border: none;
+  background-color: white;
+  color: var(--darkblue);
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 8px;
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  place-items: center;
+}
+
+.icone {
+  width: 40px;
+  fill: var(--darkblue);
+  display: inline-block;
+}
+
+.button h3 {
+  display: inline-block;
+  padding-left: 12px;
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+}
+
+.content {
+  max-width: 1000px;
+  /*width: 80%;*/
+  margin: auto;
+    text-align: justify;
+  text-justify: inter-word;
+
+}
+
+.grid-container {
+  
+  width: 80%;
+  max-width: 1000px;
+  margin: auto;
+  display: grid;
+  justify-items: center;
+  /*align-items: center;*/
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  gap: 2rem;
+  text-align: center;
+}
+
+.membro-lista {
+  text-align: center;
+}
+
+.nome {
+  font-weight: bold;
+  color: var(--darkblue);
+}
+
+.idade {
+  font-size: .8rem;
+}
+
+.job {
+  font-weight: bold;
+  font-size: .7rem;
+
+}
+
+.manifesto {
+  text-align: left;
+/*  width: 80%;
+  margin: 1000px;
+  margin: auto;*/
+}
+
+.header-compromissos {
+  display: flex;
+}
+
+.title-compromisso {
+  color: white;
+  padding: .7rem;
+  /*margin-bottom: 1rem;*/
+  font-size: 1rem;
+  margin: 21px -10px;
+  padding-left: 20px;
+  width: 91%;
+}
+
+.svg-compromissos {
+  fill: var(--darkblue);
+  width: 75px;
+  z-index: 99;
+}
+
+
+
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+
+  .grid-container {
+    justify-items: start;
+  }
+
+  .membro-lista {
+    text-align: left;
+  }
+
+  .content {
+    width: 80%;
+  }
+
+}
