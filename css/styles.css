@@ -19,6 +19,7 @@ h2,
 h3,
 h5 {
   text-transform: uppercase;
+  letter-spacing: .04rem;
 }
 
 h1 {
@@ -56,7 +57,7 @@ p {
 }
 
 ul {
-  padding-left: 20px;
+  padding:0 20px;
   margin-bottom: 1rem;
 }
 
@@ -67,6 +68,11 @@ li {
 .row {
   width: 100%;
   padding: 2rem;
+}
+
+.lista-compromissos .row {
+ padding: 1rem; 
+ margin-bottom: ;
 }
 
 .meia-row {
@@ -131,16 +137,29 @@ li {
 
 .header-compromissos {
   display: flex;
+  margin-bottom: .5rem;
+}
+
+.header-conselho {
+  display: flex;
+  /*margin-bottom: .5rem;*/
+}
+
+.img-conselhos {
+  max-width: 98%;
+  margin-bottom: -25px;
 }
 
 .title-compromisso {
   color: white;
   padding: .7rem;
   /*margin-bottom: 1rem;*/
-  font-size: 1rem;
-  margin: 21px -10px;
+  font-size: .9rem;
+  margin: 21px -16px;
   padding-left: 20px;
-  width: 91%;
+  width: 81%;
+  letter-spacing: .04rem;
+  white-space: break-spaces;
 }
 
 .svg-compromissos {
@@ -150,6 +169,25 @@ li {
 }
 
 
+footer {
+  background-color: var(--darkblue);
+  padding: 2rem;
+}
+
+.redes-sociais ul {
+  margin-top: 20px;
+  text-align: center;
+
+}
+
+.icone-social {
+  list-style-type: none;
+  display: inline-block;
+  margin: 10px;
+}
+.icone-svg {
+  width: 40px;
+}
 
 @media only screen and (min-width: 768px) {
   /* For desktop: */
@@ -165,5 +203,25 @@ li {
   .content {
     width: 80%;
   }
+
+  ul {
+  padding:0 40px;
+  
+  }
+
+  .title-compromisso {
+    
+    font-size: 1rem;
+    margin: 21px -10px;
+    
+    width: 91%;
+  }
+
+
+.img-conselhos {
+  max-width: 100%;
+
+}
+
 
 }
