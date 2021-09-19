@@ -34,40 +34,43 @@
 </head>
 <body>
 
-<nav class="topnav">
-
-	<ul>
-		<li>Home</li>
-		<li>Candidatos</li>
-		<li>Manifesto</li>
-		<li>Compromissos</li>
-			<ul>
-				<li>Empresas e Empregos</li>
-				<li>Sa&uacute;de e A&ccedil;&atilde;o Social</li>
-				<li>Ambiente e Espa&ccedil;os Verdes</li>
-				<li>Mobilidade e Acessibilidade</li>
-				<li>Cultura, Desporto e Juventude</li>
-				<li>Educação</li>
-				<li>Associativismo e Governan&ccedil;a</li>
-				
-			</ul>
+<nav id="menu-topnav" class="topnav hidden" >
 
 
-		<li>Conselhos Consultivos</li>
-		<ul>
-			<li>Conselho Consultivo Empresarial</li>
-			<li>Conselho Consultivo Juventude</li>
-		</ul>
+	
+	<a class="logo-navbar" href="#"><img class="" src="" alt="Afirmar Campelos e Outeiro"></a>
 		
-	</ul>
+	<a href="#candidatos" onclick="topNavToggle()">Candidatos</a>
+	<a href="#manifesto" onclick="topNavToggle()">Manifesto</a>
+	<a href="#compromissos" onclick="topNavToggle()">Compromissos</a>
+	<a href="#conselhos" onclick="topNavToggle()">Conselhos Consultivos</a>
+	<a href="#contactos" onclick="topNavToggle()">Contactos</a>
 
 	<ul>
 		<li>facebook</li>
 		<li>instagram</li>
 		<li>email</li>
 	</ul>
-	<a href="">download btn</a>
-	
+<!-- 
+	<a href="downloads/afirmar_campelos_e_outeiro.pdf" >
+		<button class="button download" style="font-size:">
+
+			<h3 style="">Programa Eleitoral</h3>
+			<div class="icone">
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29.978 29.978" xml:space="preserve">
+			  <path d="M25.462 19.105v6.848H4.515v-6.848H.489v8.861c0 1.111.9 2.012 2.016 2.012h24.967c1.115 0 2.016-.9 2.016-2.012v-8.861h-4.026zM14.62 18.426l-5.764-6.965s-.877-.828.074-.828h3.248V.494S12.049 0 12.793 0h4.572c.536 0 .524.416.524.416V10.424h2.998c1.154 0 .285.867.285.867s-4.904 6.51-5.588 7.193c-.492.495-.964-.058-.964-.058z"/>
+				</svg>
+			</div>
+
+		</button>
+	</a>
+
+ -->
+	<a href="javascript:void(0);" class="hambmenu" onclick="topNavToggle()">
+	    <div class="burguer"></div>
+	    <div class="burguer"></div>
+	    <div class="burguer"></div>
+	</a>
 
 </nav>
 
@@ -78,7 +81,7 @@
 </section>
 
 
-<section id="candidatos">
+<section id="candidatos" class="page-section">
 
 		<div class="row orange">
 
@@ -253,7 +256,7 @@
 </section>
 
 
-<section id="manifesto">
+<section id="manifesto" class="page-section">
 	
 	<div class="row orange">
 
@@ -281,9 +284,9 @@
 </section>
 
 
-<section id="compromissos">
+<section id="compromissos" class="page-section">
 	
-<div class="lista-compromissos">
+	<div class="lista-compromissos">
 
 		<h2 class="row orange">Os Nossos Compromissos</h2>
 		<div class="row blue">
@@ -525,7 +528,7 @@
 	</div>	
 </section>
 
-<section id="conselhos">
+<section id="conselhos" class="page-section">
 	
 	<div class="lista-compromissos">
 
@@ -592,7 +595,7 @@
 
 </section>
 
-<footer class="foot">
+<footer id="contactos" class="foot" class="page-section">
 		<svg id="vota-psd" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 885.91 87.58">
 		  <defs>
 		    <style>
@@ -659,9 +662,7 @@
 
 </div>
 	
-
-<div style="display: grid; place-items: center;">
-	<a href="downloads/afirmar_campelos_e_outeiro.pdf">
+	<a href="downloads/afirmar_campelos_e_outeiro.pdf" style="display: grid; place-items: center;">
 		<button class="button download">
 
 			<h3 style="">Programa Eleitoral</h3>
@@ -674,7 +675,7 @@
 		</button>
 	</a>
 
-</div>
+
 
 </footer>
 
